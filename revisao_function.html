@@ -1,0 +1,65 @@
+<!-- 1.Crie uma função que exibe a palavra (ímpar/par) de acordo com o numero digitado pelo usuário.-->
+<script>
+    function parImpar(num1){
+    if (num1 %2 == 0){
+        alert("Numero par")
+    }
+    else{
+       alert("Numero impar")
+   }
+}
+num1 = parseFloat(prompt("Digite o primeiro numero: "))
+parImpar(num1)
+
+</script>
+<!--2.Crie uma função que recebe 2 parâmetros(numéricos) e retorna a divisão deles e mostra na tela.-->
+<script>
+    function divisao(num1, num2){
+        return num1/num2
+    }
+    num1 = parseFloat(prompt("Digite o primeiro numero: "))
+    num2 = parseFloat(prompt("Digite o segundo numero: "))
+    resultado = divisao(num1, num2)
+    alert("O resultado é"+ resultado)
+</script>
+<!--3.Crie uma função que pede ao usuário para digitar um valor e calcular 5% de desconto
+retornando o valor do desconto.-->
+<script>
+   function desconto(num1){
+      return num1*0.95
+   }
+    num1 = parseFloat(prompt("Digite o valor a ser descontado"))
+    resultado = desconto(num1)
+    document.write("O valor com desconto sera de:" + resultado)
+</script>
+<!--4.Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade(18 anos acima) ou menor (considere 2021)-->
+     <script>
+         function idade(){
+             if (2021 - ano >=18){
+             alert("Você é maior de idade")
+             }
+             else {
+             alert ("Você é menor de idade!")
+             }
+            }
+        ano = parseFloat(prompt("Digite o ano do nascimento"))    
+        //age = parseFloat(prompt("Digite sua idade"))
+        idade ()
+     </script>
+<!--* Extra : Imagine o seguinte cenário: Marcelo lhe deve um dinheiro e promete pagar em parcelas mensais de R$ 70; com o intuito de prever qual seria o valor devido após o decorrer de 12 meses, você resolve escrever algumas linhas de código (JavaScript). Levando em consideração que o valor devido por Marcelo era de R$ 1400, qual seria o total devido após a execução do trecho a seguir?
+
+var total_divida = 1400;
+function atualizar_divida(valor_recebido){
+total_divida -= valor_recebido;
+return total_divida;
+}
+for(var i=0;i<12;i++){
+atualizar_divida(70);
+} -->
+<script>
+    const person = {
+  firstName: "John",
+  lastName: "Doe",
+    }
+    alert (person.firstName, person.lastName)
+</script>

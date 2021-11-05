@@ -1,0 +1,72 @@
+<!--Eventos são ações ou ocorrências que acontecem no sistema que estamos desenvolvendo, 
+    no qual este te alerta sobre essas ações para que você possa responder de alguma forma, se desejado.-->
+
+    <!--todas as ações do javascript
+    se forem colocadas dentro do codigo html
+    deve esta locaçizada proximo ao footer-->
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soulflix</title>
+    </head>
+
+    <style>
+        .estilo{
+            background-image: linear-gradient(rgb(212, 212, 31), rgb(38, 38, 168));
+            color:whitesmoke;
+            width: 140px;
+            height: 50px;
+            margin:50px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 10px 5px 10px;
+
+        }
+
+        .botao{
+            margin: 50px;
+            border-radius: 5px;
+            width: 140px;
+            height: 50px;
+            padding: 20px;
+            border-color: yellowgreen;
+            transition:5ms;
+        } 
+    </style>
+    <body>
+        <button class="botao" onclick="surprise()">clique aqui</button>
+        <p id="texto"></p>
+        
+        <div class="estilo" id="mouseon" onmouseover="entra()"  onmouseout="sai()"></div>
+
+
+
+        <script>
+           function surprise(){
+               document.getElementById("texto").innerHTML = "o botão está funcionando";
+              //esta chamando o id do html
+               //innerHTML = faz referencia ao id que esta localizado dentro do html
+           }
+           function entra(){
+    document.getElementById("mouseon").innerHTML = " o mouse esta aqui dentro ";
+     }
+
+
+     function sai(){
+        document.getElementById("mouseon").innerHTML = " tá passada???";
+         }
+
+         </script>
+       
+    </body>
+    
+
+    
+  </html>
+
+  

@@ -1,0 +1,72 @@
+<!--1. Utilizando as funções matematicas crie um script que o usuario digite dois numeros 
+e mostre na tela os numeros escolhidos e raiz quadrada dos mesmos (arredondada)-->
+
+<script type="text/javascript">
+var num1=parseFloat(prompt("digite um numero"));
+var num2=parseFloat(prompt("digite um numero"));
+var resultado1= Math.sqrt (num1)
+var resultado2= Math.sqrt (num2)
+
+document.write("a raiz quadrada" + num1 + Math.round(resultado1))
+document.write("a raiz quadrada" + num2 + Math.round(resultado2))
+</script>
+
+<!--.Crie um script onde o usuario digite 3 numeros , esse numeros elevados a 2 , 3 e 4 ,
+     mostre o resultado de cada um deles e a soma das potencias dos 3-->
+
+<script>
+    a= parseInt(prompt("digite um numero"));
+    b= parseInt(prompt("digite um numero"));
+    c= parseInt(prompt("digite um numero"));
+
+    resultado1= Math.pow(a,2)
+    resultado2= Math.pow(b,3)
+    resultado3= Math.pow(c,4)
+
+    soma=resultado1+resultado2+resultado3
+
+    document.write(resultado1+ "<br>" + resultado2 +"<br>" + resultado3 "<br>" + "o resultado é" + soma)
+</script>
+
+<!--Crie um script onde o usuario digite 2 numeros e 
+    realize a divisão entre os dois sendo sempre dividido o maior pelo menor , 
+    apos exiba na tela os numeros escolhidos e o resultado da divisão arredondado para baixo(floor)-->
+
+    <script>
+        num1= parseFloat(prompt("digite um numero"));
+        num2= parseFloat(prompt("digite um numero"));
+
+        resultado= Math.max(num1,num2)/Math.min(num1,num2)
+        document.write("resultado= "+ num1 "/" + num2 "=" + resultado+ Math.floor(resultado))
+    </script>
+
+<!--.Crie um script onde o usuario digite um numero e esse mesmo seja subtraido de um numero randomico(0 - 1000) 
+    e mostre na tela o resultado absoluto do mesma bem como o numero escolhido pelo usuario e o numero randomico-->    
+
+    <script>
+        num1 = parseFloat(prompt("digite um numero"));
+        resultado = num1 - Math.random(num1)
+        document.write("resultado =" + num1)
+    </script>
+
+<!--.Crie um script onde o usuario digite um numero e esse mesmo seja subtraido de um numero randomico(0 - 1000) 
+    e mostre na tela o resultado absoluto do mesma bem como o numero escolhido pelo usuario e o numero randomico-->    
+
+   <script>
+    num1= parseFloat(prompt("digite um numero"));
+    num2 =Math.random()*1000)
+
+     resultado= num1 - num2
+     document.write(resultado)
+ </script>
+
+<!-- Crie um script onde o usuario digite o angulo que ele quer calcular , 
+    mostre na tela o angulo escolhido e seu seno , cosseno e tangente--> 
+
+     <script>
+         angulo = parseInt(prompt("Digite um angulo em graus"))
+
+         document.write("O seno de" + angulo + "equivale a " + Math.sin(angulo) + "<br>" );
+         document.write("O cosseno de" + angulo + "equivale a " + Math.cos(angulo) + "<br>" );
+         document.write("O tangente de" + angulo + "equivale a " + Math.tan(angulo) + "<br>" );
+     </script>

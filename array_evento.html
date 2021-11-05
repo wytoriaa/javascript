@@ -1,0 +1,39 @@
+<!-- Crie um site personalizado por você que tenha um botão em html que ao ser clicado acesse uma função que peça para o usuário digitar um numero N que seja maior que 0 e menor que 21. Você deverá armazenar em um Array de números uma sequência de N (Que foi o número digitado pelo usuário) números pares, a partir do número 2. 
+
+Exs: Usuário digitou 5
+Deverá criar um Array contendo os números 2, 4, 6, 8 e 10.
+
+Usuário digitou 3
+Deverá criar um Array contendo os números 2 4 e 6.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e Eventos</title>
+</head>
+<body>
+    <button class="botao" onclick="numpares()">clique p/ função</button>
+        <p id="par"></p>
+</body>
+<script>
+   
+
+    function numpares(){
+        var numero = parseFloat(prompt("Digite os numeros para o array"))
+        var numpares = []
+        
+         while(numero <0 || numero > 21){
+             numero = alert("Só é possivel numero entre 0 e 21")
+         };
+         for (var i=0; i< numero; i++){
+            numpares [i] = (i*2+2)
+         }
+
+         document.getElementById(par).innerHTML = ("A sequencia de numero pares" + numpar + numpares)
+    }
+</script>
+</html>

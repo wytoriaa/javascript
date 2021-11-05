@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+ 
+  }
+  
+    body {
+      background: white;
+      font-size: 18px;
+    }
+
+    .header{
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100px;
+    background: linear-gradient(#4158D0, #C850C0, #FFCC70);
+    font-size: 18px;/*mudar a cor*/
+  }
+  .header-container{
+    max-width: 800px;
+    margin:0 auto;
+    margin-bottom: 10px;
+  
+  }
+  /*menu*/
+  .header-container a{
+    display: inline-block;
+    color:#2f363d;
+    text-align: center;
+    padding: 39px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Varela Round', sans-serif;
+  }
+  .header-container a:hover{
+    background-color: #f8e3ab;
+    color: #0d1117;
+  }
+  .header-container a.menu-ativo{
+    background-color: #271052;
+    color: #d1d5da;
+  }
+
+  .box1b, .box2b{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    height: 150px;
+    padding: 20px 0 25px;
+    margin: 0 auto;
+    background-color:#4159d080;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    } 
+
+footer{
+  color: #d1d5da;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100px;
+  background: linear-gradient(#4158D0, #C850C0, #FFCC70);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Varela Round', sans-serif; 
+}
+.acessibilidade{
+    float: right;
+    font-size: 18px;
+}
+</style>
+<body>
+    <header>
+        <header class="header">
+            <div class = "header-container">
+                <a class="menu-ativo" href="CalcTudo.html">home</menu></a>
+                <a href="conversor_2.html">conversor</a>
+                <a href="calculadora_parte2.html">calculadora</a>
+                <a href="formulário.html">formulário</a>
+            </div>
+        </header>
+    </header>
+    <div class="acessibilidade">
+        <button onclick="diminuir()"><img src="diminuir-o-tamanho-da-fonte.png"> </button>
+        <button onclick="aumentar()"><img src="aumentar-o-tamanho-da-fonte.png"> </button>
+    </div>
+    <!--moeda-->
+    <br>
+    <br>
+    <fieldset class="box1b">
+        <p>Real para:</p>
+        <div >
+            <label for="nome">R$</label>
+            <input type="number" id="real">
+
+            <select name="moedas"id="moedas">
+                <option value=""></option>
+                <option value="euro">Euro</option>
+                <option value="dolar">Dólar</option>
+                <option value="libra">Libra</option>
+            </select>
+            <br>
+            <button id="convmoeda" onclick="conversao1()">Valor convertido 🤑:</button>
+
+            <label for="nome">Resultado</label>
+            <input type="number" id="result1" placeholder="Valor convertido">    
+        </div>
+    </fieldset>
+    <br>
+    <br>
+    <!--temperatura-->
+    <fieldset class="box2b">
+        <p>Celsius para:</p>
+        <div>
+            <label for="nome">°C</label>
+            <input type="number" id="celsius">
+
+            <select name="temperaturas"id="temperaturas">
+                <option value="fahr">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <br>
+            <button id="tempconvertida" onclick="conversao2()">Converter 🥶</button>
+
+            <label for="nome">Resultado</label>
+            <input type="number" id="result2" placeholder="nova temperatura">    
+        </div>
+    </fieldset>
+
+</body>
+<br>
+<br>
+<footer>
+    <br>
+    feito por Wytoria
+    <br>
+    <br>
+    <a href="https://www.instagram.com/wytoriaa/"><img src="instagram (2).png"></a>
+    <a href="https://www.linkedin.com/in/wytoriarf/"><img src="linkedin (2).png"></a>
+    <a href="https://github.com/wytoriaa"><img src="github (1).png"></a>
+    <a href="https://www.linkedin.com/company/soulcodeacademy/"><img src="soulcode.jpg"></a>
+</footer>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+<script>
+    //moeda
+    function conversao1(){
+        euro = 6.03;
+        dolar = 5.06;
+        libra = 7.05;
+                
+        valor = parseFloat(document.getElementById("real").value);			
+        
+        if(document.getElementById("moedas").value=="euro"){
+            var e= valor*euro;
+            document.getElementById("result1").value = e.toFixed(2);                      
+         } 
+        else 
+            if (document.getElementById("moedas").value=="dolar"){
+            var d= valor*dolar;
+            document.getElementById("result1").value = d.toFixed(2);
+        } 
+        else 
+            if(document.getElementById("moedas").value=="libra"){
+            var l= valor*libra;
+            document.getElementById("result1").value = l.toFixed(2);
+        }
+        
+    }
+    
+    //temperatura
+    function conversao2(){
+        fahrenheit = 6.03;
+        kelvin = 5.06;
+                
+        celsius = parseFloat(document.getElementById("celsius").value);			
+        
+        if(document.getElementById("temperaturas").value=="fahr"){
+            var f= (celsius - 32/9)*5;
+            document.getElementById("result2").value = f.toFixed(2);                      
+         } 
+        else 
+            if (document.getElementById("temperaturas").value=="kelvin"){
+            var k= celsius + 273;
+            document.getElementById("result2").value = k.toFixed(2);
+        }
+        
+    }
+   
+    //acessibilidade
+    tamanho = 18;
+        function diminuir() {
+            tamanho --;
+            document.body.style.fontSize = tamanho +"px";
+        }
+        function aumentar() {
+            tamanho ++;
+            document.body.style.fontSize = tamanho +"px";
+        }
+</script>
+</html>

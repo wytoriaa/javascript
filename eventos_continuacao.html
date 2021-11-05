@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8"/>
+        <title>Eventos (continuação) com CSS</title>
+    </head>
+    <body>
+        <!--nesse codigo abaixo ele não retorna a posição original
+        utilizar sempre o ID, nunca o class, pois o javascript só reconhece o id-->
+        <div id="minhaDiv" onclick="mudaEstilo()">Clique aqui</div>
+        <script>
+            mudaEstilo = () =>{ //aero function // colocar crase para abrir a função
+                document.getElementById('minhaDiv').style.cssText = ` 
+                width: 300px;
+                height: 300px;
+                background-color: red;
+                color: white;
+                border-radius: 20px;
+                display:flex;
+                justify-content: center;
+                aling-items: center;
+                padding: 30px; 
+                
+                `
+            }
+            //retorna() => {
+               // document.getElementById("")
+            //}
+
+
+
+        </script>
+
+    </body>
+</html>    

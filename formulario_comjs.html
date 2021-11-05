@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="digite seu nome"/>
+    <input type="email" id="email" placeholder="digite seu email"/>
+
+    <button onclick="recebeDados()">próximo</button>
+    <p id="revela"></p>
+
+    <script>
+        recebeDados = () =>{
+            //recebe o valor digitado no campo nome
+            n = document.getElementById("nome").value;
+            e = document.getElementById("email").value;
+            
+            console.log(n)
+            console.log(e)
+
+            document.getElementById('revela').innerHTML = `
+            Nome: ${n}, email: ${e}
+        `
+        }
+    
+    </script>
+</body>
+</html>
+</script>

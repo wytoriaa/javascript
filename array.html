@@ -1,0 +1,233 @@
+<script>
+    //
+    //array sem tamanho
+
+     meuArray = new Array();
+        // com tamanho
+     meuArray2 = new Array(4);
+
+        //com valores definido
+        nomes = new Array("Vanessa", "Kemelyn", "Leandro", "Bruno", "Javiscleivison");
+
+        //apenas com []
+      nomes_ = ["Vanessa", "Kemelyn", "Leandro", "Bruno", "Javis"];
+
+        // com posições definidas
+
+        valores = new Array();
+       nomeArray[nomePosição] = valorDesejado
+        valores[5] = "Café";
+        valores[1] = "Pao";
+        valores[4] = "Queijo";
+        /valores[1] = "Presunto";
+
+        carro = new Array();
+        carro['marca'] = 'Fiat';
+        carro['modelo'] = 'Uno';
+        carro['cor'] = 'Vermelho';
+
+        imprimir um valor  nome[posição]
+        document.write(`${valores[1]} de ${valores[4]}`);// pao de queijo
+        document.write(`${carro['marca']} ${carro['modelo']} 2.0`);//Fiat Uno
+    </script>
+
+    <script>
+       mesesdoano = new Array();
+       nomeArray[nomePosição] = valorDesejado
+        mesesdoano[1] = "janeiro";
+        mesesdoano[2] = "fevereiro";
+        mesesdoano[3] = "março";
+        mesesdoano[4] = "abril";
+        mesesdoano[5] = "maio";
+        mesesdoano[6] = "junho";
+        mesesdoano[7] = "julho";
+        mesesdoanos[8] = "agosto";
+        mesesdoano[9] = "setembro";
+        mesesdoano[10] = "outubro";
+        mesesdoano[11] = "novembro";
+        mesesdoano[12] = "dezembro";
+
+        document.write(`${valores[7]} mês do inverno, ${valores[12]} mês do papai noel`)
+
+    </script>
+
+    <script>
+        //crie um array com valores (L,O,P,N,R,S,U,M)
+        //mostre 5 palavras aleatorias juntando os dois arrays
+        letras1= new Array()
+        letras1[1]= "A"
+        letras1[2]="B"
+        letras1[3]="C"
+        letras1[4]="D"
+        letras1[5]="E"
+        letras1[6]="F"
+        letras1[7]="G"
+        letras1[8]="H"
+
+        letras2= new Array()
+        letras2[1]= "L"
+        letras2[2]="O"
+        letras2[3]="P"
+        letras2[4]="N"
+        letras2[5]="R"
+        letras2[6]="S"
+        letras2[7]="U"
+        letras2[8]="M"
+
+       
+
+        palavras= new Array()
+        document.write(`${letras1[2]}${letras1[1]}${letras2[4]}${letras1[1]}${letras2[4]}${letras1[1]} <br>`) //banana
+        document.write(`${letras2[6]}${letras2[2]}${letras2[7]}${letras2[1]} <br>`) //soul
+        document.write(`${letras1[6]}${letras2[1]}${letras2[2]}${letras2[5]} <br>`) //flor
+        document.write(`${letras1[1]}${letras2[1]}${letras2[8]}${letras1[1]} <br>`) //alma
+        document.write(`${letras2[5]}${letras2[2]}${letras2[6]}${letras1[1]} <br>`) //rosa
+
+
+
+        
+    </script>
+
+    <script>
+        //tamanho do array length
+        a = [0,1,2,3,4,5,6,7,8,9,10];
+        b = [6,7,8,9];
+        d = [12,321,123,3243,4545,5465,56,56]
+        document.write(`o array 'a' tem o tamanho de ${a.leigth} posições <br>`);
+        document.write(`o array 'b' tem o tamanho de ${b.leigth} posições <br> ${b.join(' - ')}`);
+       
+        //join - cria uma string unica com os valores do array separando
+        // eles com algum caractere
+        // nomeArray.join('-')
+        document.write(a.join('pato(s)'));
+
+        //concat - concatenar array
+        // array1.concat(array2)
+
+        c = a.concat(b)
+        document.write(`array c: ${c} <br> array a: ${a} <br> array b: ${b}`)
+        
+        f= d.concat(a,b,c); //colocar os arrays separados por virgula
+        document.write(`array f: ${f} <br>`);
+    </script>
+
+    <script>
+         dados = new Array(1,2,3)
+
+         if (dados.length == 0){
+             document.write("nenhuma informação guardada")
+         }
+         else {
+             document.write(dados)
+         }
+    </script>
+
+    <script>
+        //PUSH
+
+        v = [1,2,3,4,5];
+        document.write(v, "<br>");
+        //push() -> insere um elemento na lista, no final dela - nomeArray.push("valor")
+        v.push(0); //1,2,3,4,5,0
+        v.push(1); //1,2,3,4,5,0,1
+        v.push(8); //1,2,3,4,5,0,1,8
+        document.write(v, "<br>");
+
+        for(p = 1; p <= 3; p++){
+          r = prompt("Dgt um valor");
+          v.push(r);
+        }
+
+        document.write(v, "<br>");
+        
+        function soma(a, b){
+          return a+b
+        }
+
+        v.push(soma(1,2));
+        v.push(soma(156,212));
+        v.push(soma(11,212));
+        v.push(soma(31,22));
+        v.push(soma(15,42));
+
+        document.write(v, "<br>");
+
+    </script>
+    
+    <script>
+        //UNSHIFT, igual ao push, mas utiliza no inicio da array
+        v.unshift()
+
+        //POP não precisa colocar valor, apaga o elemento ao final da lista
+        //utilização pratica: 
+        v.pop()
+
+        //UNSET apaga a linha toda
+        v.unset()
+    </script>
+
+    <!--
+        .reduce()
+Esta função serve para reduzirmos o conteúdo de um Array para apenas um elemento.
+
+O exemplo mais clássico é somar todos os valores de um Array.
+
+var numeros = [10, 15, 25, 3, 12, 1, 99];
+            
+            var total = numeros.reduce((total, elementos) => total + elementos)
+            console.log(total);
+A função que executamos recebe como primeiro parâmetro uma variável que irá acumular um valor
+ e como segundo parâmetro teremos cada um dos elementos do Array a cada iteração.
+
+    -->
+
+    <script>
+        //splice = vc seleciona o que quer apagar
+        // O primeiro parâmetro é o index de onde deve iniciar a remoção,
+        // o segundo a quantidade de valores removidos(se não informado, 
+        //removerá todos os valores do index início até o final da array), e do terceiro em diante serão valores novos que entrarão no lugar dos valores removidos.
+
+
+        letras = ["A", "B", "C", "D", "E", "F","G", "H"];
+        //inserindo na posição a frente da posição 1 um novo valor
+        letras.splice(1,0, "novo valor");
+        //excluindo 5 posições a partir do 1 e inserindo um novo valor
+        letras.splice(1,5, "novo valor");
+        
+        document.write(letras);
+
+        //find() 
+        //percorre o array até encontrar a primeira ocorrencia desejada
+        // percorre de acordo com a posiçao em que o elemento esta
+
+        var a =[12,45,76,43,23,45];
+        document.write(
+            a.find(
+                (valor)=>(valor >40) //encontra 45 pois é o primeiro valor acima de 45 na lista
+                (valor)=>(valor == 23)
+                (valor)=>(valor == 20) //unfinded
+            )
+        )
+
+            //criar uma função anonima
+            //()=>{
+            // comandos
+            //}
+
+
+        //filter() = percorre uma array mostrando todas as orrencias no array
+        var a =[12,45,76,43,23,45];
+        document.write(
+        a.filter(
+            (valor)=>(valor < 30 || valor >70)
+        )    
+        )
+
+        //map() = percorre o array separando posições e valores
+
+        a.map(
+            (valor, posicao) =>{
+                document.write (`valor: ${valor} posicao: ${posicao} <br>`)
+            }
+        )
+    </script>

@@ -1,0 +1,56 @@
+<!--Crie um array com as posições (nome, email, telefone, cpf, endereço) e atribua valores a cada posição. 
+    Com os valores do array, mostre uma mensagem com os dados organizados.-->
+
+    <script>
+        dados= new Array()
+        dados ["nome"]= "Wytoria Rodrigues"
+        dados ["email"] = "wytoria@gmail.com"
+        dados ["telefone"] = 912344567
+        dados ["cpf"] = 12345678900
+        dados ["endereço"] = "Rua das Angelicas"
+
+        document.write(`${dados["nome"]} <br> ${dados["email"]} <br> ${dados["telefone"]} <br> ${dados["cpf"]} <br> ${dados["endereço"]} <br>`)
+    </script>
+
+<!--Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armaze os nomes lidos em
+um vetor depois mostre os valores.-->    
+
+<script>
+    nombres = new Array(10);
+    for (n=0; n<10; n++){
+
+    nombres[n] = prompt("Digite 10 nomes de sua preferencia")
+ }
+
+     document.write(nombres)
+
+</script>
+
+<!-- Escreva um algoritmo que permita a leitura das notas de  5 alunos. 
+    Calcule a média desses alunos e mostre.-->
+    <a href= "WhatsApp Image 2021-06-30 at 22.53.46.jpeg"></a>
+    <!-- tinha feito a questão como tem na imagem, porem achei q tivesse errado-->
+    <script>
+        nota = 0
+        for(n=0; n<5; n++){
+        nota1 = parseFloat(prompt("nota1"))
+        nota2 = parseFloat(prompt("Digite nota 2"))
+        notas = (nota1 + nota2)/2
+    }
+    if (notas>= 7){
+        document.write("os 5 alunos foram aprovados")
+    }
+    else{
+        document.write("os 5 alunos foram reprovados")
+    }
+    </script>
+
+<!--Usando estrutura de repetição, armazene valores de 0 a 100 e utilizando o join mostre o array separado por ' - '.--> 
+<!-- ESSA EU NAO CONSEGUI-->
+<script>
+    let loop = new Array();
+for (l = 0; l < 101; l++) {
+    //não rodou :/
+}
+document.write(loop.join('-'));
+</script>

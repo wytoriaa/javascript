@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Gato{
+            nome; corPelo; corOlhos; idade; raça; //(atributos do gato)
+            //constructor é uma função reservada para construir um ojbeto
+            constructor(nome_,corPelo_,corOlhos_,idade_,raca_){ //são variaveis locais
+                 //this é uma propriedade da class Gato
+                this.nome = nome_;
+                this.corPelo = corPelo_;
+                this.corOlhos = corOlhos_;
+                this.idade = idade_;
+                this.raca = raca_
+                //Criamos 5 variáveis locais, logo teremos que passar 5 parâmetros,
+                //para serem armazenados na propriedade do gato, e por consequência na classe.
+                
+            }
+            //metodo SET = atribuição/iserção de valores (atribuição)
+            //metodo GET = recolhe/pega valores (retorno)
+            
+            setNome(nome_){ //atribuir valor para nome
+                this.nome = nome_;
+            }
+            getNome(){ //recebe o valor armazenado de nome
+                return this.nome;
+            }
+
+            //metodo = ação
+            comer(){
+                return `${this.nome} está comendo`;
+            }
+            miar(){
+                return `O ${this.nome} quer sua atenção, querida!`
+            }
+            andar(){
+                return `O ${this.nome} está perambulando por ai`
+            }
+            dormir(){
+                return "ZZZzzZzZzZZZzzzzZZ"
+            }
+            debochar(){
+                return `O ${this.nome} odeia humanos`
+            }
+            rorronar(){
+                return "ronronron"
+            }
+        }
+
+    //obj1
+    gato1 = new Gato("Paçoca","Preto", "Amarelado","5 anos","Nordico"); //os nomes nao precisam necessáriamente começar com letras maiusculas
+    gato2 = new Gato("Galera","Cinza","Verdes","2 anos", "Preguiçoso");
+    gato3 = new Gato("Aurora","Cinza","Azul","4 anos", "Vira lata");
+    gato4 = new Gato("Banguela","Branco","Verdes","7 anos", "Princesa");
+    gato5 = new Gato("Baleia","Marrom","Verdes","3 anos", "Tech");
+    
+    //para acessar as propriedades de objeto  = objeto.propriedade
+    //document.write(`O nome do gato é: ${gato1.nome} <br>`);
+    //document.write(`O nome do gato é: ${gato2.nome} <br>`);
+    //document.write(`A gata mais fofa do rolê é a ${gato4.nome}<br>`)
+    //document.write(`A gata ${gato4.nome}, tem ${gato4.idade}, possui um pelo de cor ${gato4.corPelo} e pertence a raça ${gato4.raca} <br>`)
+
+    //para metodos
+    //document.writeln(
+        //gato1.dormir(
+            //`${gato4.nome} \n`
+        //)
+    //)
+
+    //document.writeln(gato2.andar(
+        //`${gato3.nome} \n`
+   // ))
+
+   // document.writeln(gato5.miar(
+    //`${gato5.nome} \n`
+    
+   // ))
+    
+//document.writeln(gato4.debochar() , " ", (gato2.rorronar()))
+gato1.setNome("Florzinha");
+    documente.write(gato1.getNome())
+
+    setcorOlhos(corOlhos_)
+    this.corOlhos = corOlhos_;
+    
+    </script>
+</body>
+</html>

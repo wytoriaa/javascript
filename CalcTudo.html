@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>CalcTudo</title>
+</head>
+
+<body id="body">
+    
+    <!--menu lá no topo e do lado direito-->
+    <header class="header" id="header">
+        <div class = "header-container">
+            <a class="menu-ativo" href="CalcTudo.html">home</menu></a>
+            <a href="conversor_2.html">conversor</a>
+            <a href="calculadora_parte2.html">calculadora</a>
+            <a href="formulário.html">formulário</a>
+        </div>
+    </header>
+
+    <!--parte principal do site-->
+    <main id="main">
+        <section id="section">
+            <article class="container1" id="container1">
+                <div clas="centralizar1" id="div">
+                <div class="sessao1" id="div1">
+                    <div class="imagem1">
+                        <img src="calculadora (1).png">
+                    </div>
+                     <div class="texto1" id="div2"> 
+                        <h1 id="teste1">CalcTudo</h1>
+                        <br>
+                        <h3>A sua calculadora virutal</h3>
+                              
+                    </div>
+                    <!--dark mood theme-->
+                    <div class="switch">
+                        <input type="checkbox" id="night"/>🌙
+                      </div>
+                  
+                      <script src="dark_mood.js"></script>
+                   <!--fim do dark mood theme-->
+                </div>
+                </div> 
+                </article>
+            <br>
+            <br>
+            <article class="container2" id="container2">
+                <div clas="centralizar2">
+                <div class="sessao2">
+                    <div class="imagem2">
+                        <img src="dollar.png">
+                    </div>
+                    <div class="texto2" id="div3">
+                        <h1 id="teste2">conversor de moedas</h1>
+                        <p><br>saiba quando está valendo seu dinheiro antes de viajar
+                            <br>+ veja as temperaturas em Fahrenheit e Kelvin
+                        </p>
+                    </div>
+                </div>
+                </div> 
+                </article>
+            <br>
+            <br>
+            <article class="container3" id="container3">
+                <div clas="centralizar3">
+                <div class="sessao3">
+                    <div class="imagem3">
+                        <img src="calculator.png">
+                    </div>
+                    <div class="texto3">
+                        <h1 id="teste3">calculadora</h1>
+                        <p><br>o desafio foi lançado!
+                        <br>acesse a nossa calculadora e resolva seus problemas!</p>
+                    </div>
+                </div>
+                </div>     
+        </section>
+        <button class="acess" onclick="diminuir()"><img src="diminuir-o-tamanho-da-fonte.png"> </button>
+        <button class="acess" onclick="aumentar()"><img src="aumentar-o-tamanho-da-fonte.png"> </button>
+    </main>
+    <script>
+        tamanho = 18;
+        function diminuir() {
+            tamanho --;
+            document.body.style.fontSize = tamanho +"px";
+        }
+        function aumentar() {
+            tamanho ++;
+            document.body.style.fontSize = tamanho +"px";
+        }
+        </script>
+</body>
+<footer id="footer">
+    <br>
+    feito por Wytoria
+    <br>
+    <br>
+    <a href="https://www.instagram.com/wytoriaa/"><img src="instagram (2).png"></a>
+    <a href="https://www.linkedin.com/in/wytoriarf/"><img src="linkedin (2).png"></a>
+    <a href="https://github.com/wytoriaa"><img src="github (1).png"></a>
+    <a href="https://www.linkedin.com/company/soulcodeacademy/"><img src="soulcode.jpg"></a>
+</footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+</body>
+</html>

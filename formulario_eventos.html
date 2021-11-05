@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+        <form class="formulario">
+            
+            <div>
+                <label>nome: </label>
+                <input type="text" name="" id="nome" onclick="ficaVerde1()" onmouseover="ficaVermelho1()">
+            </div>
+            
+            
+                <div>
+                    <label>e-mail: </label>
+                    <input type="text" name="" id="email" onclick="ficaVerde2()" onmouseover="ficaVermelho2()">
+                </div>
+               
+               
+                    <div>
+                        <label>username: </label>
+                        <input type="text" name="" id="username" onclick="ficaVerde3()" onmouseover="ficaVermelho3()">
+                    </div>
+                    
+        </form>
+    </div>
+    <button class="botao" onclick="clique()">enviar informações</button>
+</body>
+
+<script>
+   function ficaVerde1(){
+            document.getElementById("nome").style.backgroundColor= '#bbdb9b';
+         }
+       
+        function ficaVermelho1(){
+            document.getElementById("nome").style.backgroundColor= '#ea6145';
+           
+         }
+
+         function ficaVerde2(){
+            document.getElementById("email").style.backgroundColor= '#bbdb9b';
+         }
+       
+        function ficaVermelho2(){
+            document.getElementById("email").style.backgroundColor= '#ea6145';
+           
+         }
+         function ficaVerde3(){
+            document.getElementById("username").style.backgroundColor= '#bbdb9b';
+         }
+       
+        function ficaVermelho3(){
+            document.getElementById("username").style.backgroundColor= '#ea6145';
+         }
+
+
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!--crie um formulário com os campos valorA e valorB. ao clicar em um botão,
+    chame  uma função que some os valores dos campos. e exiba em um paragrafo-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário com JS</title>
+</head>
+<body>
+    <input type="number" id="valorA" placeholder="digite o primeiro valor">
+    <input type="number" id="valorB" placeholder="digite o segundo valor">
+    <button onclick="recebeValor()">clique aqui</button>
+    <p id="valor"></p>
+
+    <script>
+        recebeValor = () =>{
+            a = parseFloat(document.getElementById("valorA").value);
+            b = parseFloat(document.getElementById("valorB").value);
+
+            console.log(a)
+            console.log(b)
+            
+            document.getElementById("valor").innerHTML = `O resultado dessa soma é: ${a+b} `
+
+        }
+    </script>
+</body>
+</html>
