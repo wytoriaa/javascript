@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/fonts.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Codelândia</title>
+    </head>
+    <style>
+   /* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* Geral */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: #f3f5f7;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-bg {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 250px;
+  background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 0 73px 0;
+}
+
+.header-container .nav-list h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.header-container .nav-list a {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin: 0 0 41px 0;
+}
+
+.form a i {
+  color: #fff;
+  font-size: 1.875rem;
+  margin: 0 1.268rem;
+}
+
+.form input {
+  width: 90%;
+  height: 30px;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.form input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+/* Main */
+
+section {
+  max-width: 1440px;
+  margin: 100px auto;
+}
+
+article {
+  max-width: 900px;
+  margin: 50px auto;
+  height: auto;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+  padding: 20px 0 0;
+  margin: 0 auto;
+}
+
+.info span {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #b6b6b6;
+}
+
+.info i {
+  font-size: 1.25rem;
+  color: #574ae8;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  padding: 20px 0 25px;
+  margin: 0 auto;
+}
+
+.contents h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #313131;
+  margin: 0 0 8px;
+}
+
+.contents p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #b6b6b6;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .container{
+    padding: 0 20px;  
+  }
+}
+    </style>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Desafio 1 - Blog - Codelândia</title>
+      </head>
+      <body>
+        <!-- Header -->
+        <header class="header-bg">
+          <div class="header-container">
+            <nav>
+              <ul class="nav-list">
+                <li><h1 href="#">Codelândia</h1></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </nav>
+            <form class="form" action="#">
+              <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+              <input type="search " placeholder="Pesquisar no blog" />
+            </form>
+          </div>
+        </header>
+        <!-- Main -->
+        <main>
+          <section>
+            <article>
+              <div class="info">
+                <span>02 de jul, 2021</span>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div class="contents">
+                <h2>Agora é oficial: o windows 11 está vindo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+                  lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="info">
+                <span>02 de jul, 2021</span>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div class="contents">
+                <h2 nome="Time">Tim Berners-Lee vai leiloar código-fonte da web</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+                  lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+                  Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis
+                  leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus
+                  a lectus et, interdum ullamcorper libero.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="info">
+                <span>02 de jul, 2021</span>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div class="contents">
+                <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum vestibulum auctor est.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="info">
+                <span>02 de jul, 2021</span>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div class="contents">
+                <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+                  lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+                  Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis
+                  leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus
+                  a lectus et, interdum ullamcorper libero.
+                </p>
+              </div>
+            </article>
+          </section>
+        </main>
+      </body>
+    </html>

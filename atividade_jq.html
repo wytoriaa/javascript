@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    button{
+            background-color: tomato;
+            height: 30px;
+            margin: 10px;
+            width: 150px;
+        }   
+    #container{
+            align-items: center;
+            border: 2px solid rgb(152, 161, 152);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 100px;
+            padding: 30px;
+            width: 480px;
+        }         
+    #d1, #d2, #d3, #d4, #d5{
+            border: 1px solid;
+            height: 100px;
+            margin: 20px;
+            text-align: center;
+            width: 100px;
+        }
+    #botoes{
+            bottom: 500px;
+            float: right;
+            position: absolute;
+            right: 300px;
+        }        
+
+</style>
+<body>
+    <div id="container">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <div id="d5"></div>
+    </div>
+    
+    <div id="botao">
+    <button onclick="mudaBotao()">Diferentes</button>
+    <button onclick="igualaBotao()">Iguais</button>
+    <button id="sumir">Desaparece</button>
+    </div>
+
+    <script>
+        //clicar no 1º botão e mudar a altura, largura e cor das divs.
+        //cada uma com um jquery diferente
+        function mudaBotao(){
+            $("#d1").height(110).width(100).css("background-color", "purple")//.fadeIn();
+            $("#d2").height(120).width(120).css("background-color", "blue")//.fadeOut().fadeIn();
+            $("#d3").height(130).width(130).css("background-color", "red")//.slideDown();
+            $("#d4").height(140).width(140).css("background-color", "yellow")//.slideUp();
+            $("#d5").height(150).width(150).css("background-color", "pink")//.fadeIn(1000).fadeOut(1000).fadeIn(1000);
+            
+        }
+
+        //clique no 2º botão e todas as divs ficarão azul, com h = 150px e w= 300px
+        function igualaBotao(){
+            $("#d1,#d2,#d3,#d4,#d5").height(150).width(150).css("background-color","blue")
+        }
+
+        //duplo clique no 3º botão e as divs 2 e 3 desaparecem
+        $("#sumir").dblclick(function(){
+           $("#d2, #d3").fadeOut()
+        })
+    </script>
+</body>
+</html>
